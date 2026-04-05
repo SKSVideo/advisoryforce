@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --pink: #E8436A;
+  --orange: #F4813F;
+  --purple: #7B4FCC;
+  --navy: #0D1B3E;
+  --teal: #0D9488;
+  --grad: linear-gradient(135deg, #9B2FBE, #E8436A, #F4813F);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif;
+  background: #F8F9FA;
+  color: #1A2340;
+}
+
+.grad-text {
+  background: var(--grad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.grad-bg { background: var(--grad); }
+
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: var(--purple) !important;
+  box-shadow: 0 0 0 3px rgba(123, 79, 204, 0.1);
+}
+
+.nav-item { transition: all 0.15s ease; }
+.advisor-card { transition: all 0.15s ease; }
+.advisor-card:hover { transform: translateY(-2px); }
+.btn-grad { background: var(--grad); }
+.btn-grad:hover { opacity: 0.9; }
