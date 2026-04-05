@@ -1,7 +1,7 @@
 'use client'
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
-import { loginWithPassword, USERS } from '@/lib/auth'
+import { loginWithPassword } from '@/lib/auth'
 
 const DEMO_ACCOUNTS = [
   { key: 'superadmin', label: 'Sundeep Sanghavi', sub: 'sundeep@videoforce.ai', role: 'Super Admin', roleColor: 'text-amber-700 bg-amber-50 border border-amber-200', initials: 'SS', color: '#E8436A' },
